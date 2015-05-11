@@ -24,8 +24,6 @@ public class IndexAction implements Action {
 		List<Guestbook> list = dao.fetchList();
 		req.setAttribute("list", list);
 
-		System.out.println("hi");
-
 		WebUtil.forward("/views/guestbook/list.jsp", req, res);
 
 	}

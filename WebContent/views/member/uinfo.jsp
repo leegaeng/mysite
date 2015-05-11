@@ -6,7 +6,7 @@
 <head>
 <title>mysite</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
-<link href="/mysite/assets/css/user.css" rel="stylesheet"
+<link href="/mysite_jstl/assets/css/user.css" rel="stylesheet"
 	type="text/css">
 </head>
 <body>
@@ -33,7 +33,6 @@
 						<label>여</label> <input type="radio" name="gender" value="female"
 							checked="checked">
 
-
 						<c:if test="${m.gender == 'male'}">
 							<label>남</label>
 							<input type="radio" name="gender" value="male" checked="checked">
@@ -44,15 +43,15 @@
 						</c:if>
 					</fieldset>
 
-
-
 					<input type="submit" value="수정하기">
 
 				</form>
 			</div>
 		</div>
 		<div id="navigation">
-			<jsp:include page="/views/include/navigation.jsp" />
+			<c:import url="/views/include/navigation.jsp">
+				<c:param name="type" value="main"></c:param>
+			</c:import>
 		</div>
 		<div id="footer">
 			<jsp:include page="/views/include/footer.jsp" />
