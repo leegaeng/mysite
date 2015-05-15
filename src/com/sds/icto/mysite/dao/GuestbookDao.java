@@ -48,7 +48,6 @@ public class GuestbookDao {
 		if (conn != null) {
 			conn.close();
 		}
-
 	}
 
 	public void delete(int id, String password) throws ClassNotFoundException,
@@ -89,7 +88,7 @@ public class GuestbookDao {
 
 		while (rs.next()) {
 			Guestbook g = new Guestbook(rs.getInt(1), rs.getString(2),
-					rs.getString(3), rs.getString(4),rs.getString(5));
+					rs.getString(3), rs.getString(4), rs.getString(5));
 			list.add(g);
 		}
 

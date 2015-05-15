@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8" import="com.sds.icto.mysite.vo.*"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<h1>MySite</h1>
+<a href="/mysite_jstl/main"><h1>MySite</h1></a>
 <ul>
 
 	<c:choose>
